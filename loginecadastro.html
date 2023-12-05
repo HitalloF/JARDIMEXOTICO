@@ -247,12 +247,12 @@ if (loginSenha !== usuario.senha) {
 
 
    localStorage.setItem('isLoggedIn', 'true');
-
+   localStorage.setItem('usuarioLogado ', 'usuarioLogado');
    
 
 
 document.getElementById("loginForm").reset();
-
+window.location.href = 'index.html'
 alert("Login bem-sucedido! Bem-vindo, " + usuario.nome + "!");
 }
 

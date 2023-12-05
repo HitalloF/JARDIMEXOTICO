@@ -78,11 +78,15 @@
      </div>
   </div>
 
-  
-  <div id="profileContainer">
-    <img id="profileImage" src="" alt="Imagem do Perfil">
-    <h2 id="profileName"></h2>
-    <p id="profileEmail"></p>
+  <div id="profile-container">
+    <h1>Perfil do Usuário</h1>
+    <div id="user-info">
+        <p><strong>Nome:</strong> <span id="name"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <p><strong>Endereço:</strong> <span id="address"></span></p>
+        <p><strong>CPF:</strong> <span id="cpf"></span></p>
+    
+    </div>
 </div>
 
   <div class="footer">
@@ -149,6 +153,22 @@ if (localStorage.getItem('isLoggedIn') === 'true') {
 });
 
 
+
+document.addEventListener("DOMContentLoaded", function() {
+  
+    if(localStorage.getItem("userProfile")) {
+     
+        const userProfile = JSON.parse(localStorage.getItem("userProfile"));
+
+        document.getElementById("name").innerText = userProfile.nome;
+        document.getElementById("email").innerText = userProfile.email;
+        document.getElementById("address").innerText = userProfile.end;
+        document.getElementById("cpf").innerText = userProfile.cpf;
+    
+    } else {
+        console.error("Nenhum perfil encontrado no localStorage");
+    }
+});
 
   </script>
 
