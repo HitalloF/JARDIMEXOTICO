@@ -12,3 +12,6 @@ Márlya Monique da Silva - 01597623</br>
 Matheus Soares Lemos - 01608078</br>
 Ronaldo de Souza Paixão Junior - 01604034</br>
 Victor Oliveira Silva - 24007940</br>
+José Gabriel Gadiolli Lourenço da Paixão - 01603195</br>
+Luís Fernando de Oliveira Silva - 01595802</br>
+Rebeca Costa Florêncio Wanderley - 01590738</br>
